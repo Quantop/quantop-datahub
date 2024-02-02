@@ -1,4 +1,4 @@
-package main
+package utils
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func readSecretFromFile(filePath, secretKey string) (string, error) {
+func ReadSecretFromFile(filePath, secretKey string) (string, error) {
 	file, err := os.Open(filePath)
 	if err != nil {
 		return "", err
